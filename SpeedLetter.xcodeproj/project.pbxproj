@@ -1,0 +1,496 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F674F33218BF8B5800000544 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33118BF8B5800000544 /* Foundation.framework */; };
+		F674F33418BF8B5800000544 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33318BF8B5800000544 /* CoreGraphics.framework */; };
+		F674F33618BF8B5800000544 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33518BF8B5800000544 /* UIKit.framework */; };
+		F674F33C18BF8B5800000544 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F674F33A18BF8B5800000544 /* InfoPlist.strings */; };
+		F674F33E18BF8B5800000544 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F33D18BF8B5800000544 /* main.m */; };
+		F674F34218BF8B5800000544 /* SpeedLetterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F34118BF8B5800000544 /* SpeedLetterAppDelegate.m */; };
+		F674F34518BF8B5800000544 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F674F34318BF8B5800000544 /* Main_iPhone.storyboard */; };
+		F674F34818BF8B5800000544 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F674F34618BF8B5800000544 /* Main_iPad.storyboard */; };
+		F674F34B18BF8B5800000544 /* SpeedLetterFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F34A18BF8B5800000544 /* SpeedLetterFirstViewController.m */; };
+		F674F34E18BF8B5800000544 /* SpeedLetterSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F34D18BF8B5800000544 /* SpeedLetterSecondViewController.m */; };
+		F674F35018BF8B5800000544 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F674F34F18BF8B5800000544 /* Images.xcassets */; };
+		F674F35718BF8B5800000544 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F35618BF8B5800000544 /* XCTest.framework */; };
+		F674F35818BF8B5800000544 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33118BF8B5800000544 /* Foundation.framework */; };
+		F674F35918BF8B5800000544 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33518BF8B5800000544 /* UIKit.framework */; };
+		F674F36118BF8B5800000544 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F674F35F18BF8B5800000544 /* InfoPlist.strings */; };
+		F674F36318BF8B5800000544 /* SpeedLetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F36218BF8B5800000544 /* SpeedLetterTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F674F35A18BF8B5800000544 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F674F32618BF8B5800000544 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F674F32D18BF8B5800000544;
+			remoteInfo = SpeedLetter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F674F32E18BF8B5800000544 /* SpeedLetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedLetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F674F33118BF8B5800000544 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F674F33318BF8B5800000544 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F674F33518BF8B5800000544 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F674F33918BF8B5800000544 /* SpeedLetter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedLetter-Info.plist"; sourceTree = "<group>"; };
+		F674F33B18BF8B5800000544 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F674F33D18BF8B5800000544 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F674F33F18BF8B5800000544 /* SpeedLetter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SpeedLetter-Prefix.pch"; sourceTree = "<group>"; };
+		F674F34018BF8B5800000544 /* SpeedLetterAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedLetterAppDelegate.h; sourceTree = "<group>"; };
+		F674F34118BF8B5800000544 /* SpeedLetterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedLetterAppDelegate.m; sourceTree = "<group>"; };
+		F674F34418BF8B5800000544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		F674F34718BF8B5800000544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		F674F34918BF8B5800000544 /* SpeedLetterFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedLetterFirstViewController.h; sourceTree = "<group>"; };
+		F674F34A18BF8B5800000544 /* SpeedLetterFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedLetterFirstViewController.m; sourceTree = "<group>"; };
+		F674F34C18BF8B5800000544 /* SpeedLetterSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedLetterSecondViewController.h; sourceTree = "<group>"; };
+		F674F34D18BF8B5800000544 /* SpeedLetterSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedLetterSecondViewController.m; sourceTree = "<group>"; };
+		F674F34F18BF8B5800000544 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F674F35518BF8B5800000544 /* SpeedLetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedLetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F674F35618BF8B5800000544 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F674F35E18BF8B5800000544 /* SpeedLetterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedLetterTests-Info.plist"; sourceTree = "<group>"; };
+		F674F36018BF8B5800000544 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F674F36218BF8B5800000544 /* SpeedLetterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedLetterTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F674F32B18BF8B5800000544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F674F33418BF8B5800000544 /* CoreGraphics.framework in Frameworks */,
+				F674F33618BF8B5800000544 /* UIKit.framework in Frameworks */,
+				F674F33218BF8B5800000544 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F674F35218BF8B5800000544 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F674F35718BF8B5800000544 /* XCTest.framework in Frameworks */,
+				F674F35918BF8B5800000544 /* UIKit.framework in Frameworks */,
+				F674F35818BF8B5800000544 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F674F32518BF8B5800000544 = {
+			isa = PBXGroup;
+			children = (
+				F674F33718BF8B5800000544 /* SpeedLetter */,
+				F674F35C18BF8B5800000544 /* SpeedLetterTests */,
+				F674F33018BF8B5800000544 /* Frameworks */,
+				F674F32F18BF8B5800000544 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F674F32F18BF8B5800000544 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F674F32E18BF8B5800000544 /* SpeedLetter.app */,
+				F674F35518BF8B5800000544 /* SpeedLetterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F674F33018BF8B5800000544 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F674F33118BF8B5800000544 /* Foundation.framework */,
+				F674F33318BF8B5800000544 /* CoreGraphics.framework */,
+				F674F33518BF8B5800000544 /* UIKit.framework */,
+				F674F35618BF8B5800000544 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F674F33718BF8B5800000544 /* SpeedLetter */ = {
+			isa = PBXGroup;
+			children = (
+				F674F34018BF8B5800000544 /* SpeedLetterAppDelegate.h */,
+				F674F34118BF8B5800000544 /* SpeedLetterAppDelegate.m */,
+				F674F34318BF8B5800000544 /* Main_iPhone.storyboard */,
+				F674F34618BF8B5800000544 /* Main_iPad.storyboard */,
+				F674F34918BF8B5800000544 /* SpeedLetterFirstViewController.h */,
+				F674F34A18BF8B5800000544 /* SpeedLetterFirstViewController.m */,
+				F674F34C18BF8B5800000544 /* SpeedLetterSecondViewController.h */,
+				F674F34D18BF8B5800000544 /* SpeedLetterSecondViewController.m */,
+				F674F34F18BF8B5800000544 /* Images.xcassets */,
+				F674F33818BF8B5800000544 /* Supporting Files */,
+			);
+			path = SpeedLetter;
+			sourceTree = "<group>";
+		};
+		F674F33818BF8B5800000544 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F674F33918BF8B5800000544 /* SpeedLetter-Info.plist */,
+				F674F33A18BF8B5800000544 /* InfoPlist.strings */,
+				F674F33D18BF8B5800000544 /* main.m */,
+				F674F33F18BF8B5800000544 /* SpeedLetter-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F674F35C18BF8B5800000544 /* SpeedLetterTests */ = {
+			isa = PBXGroup;
+			children = (
+				F674F36218BF8B5800000544 /* SpeedLetterTests.m */,
+				F674F35D18BF8B5800000544 /* Supporting Files */,
+			);
+			path = SpeedLetterTests;
+			sourceTree = "<group>";
+		};
+		F674F35D18BF8B5800000544 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F674F35E18BF8B5800000544 /* SpeedLetterTests-Info.plist */,
+				F674F35F18BF8B5800000544 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F674F32D18BF8B5800000544 /* SpeedLetter */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F674F36618BF8B5800000544 /* Build configuration list for PBXNativeTarget "SpeedLetter" */;
+			buildPhases = (
+				F674F32A18BF8B5800000544 /* Sources */,
+				F674F32B18BF8B5800000544 /* Frameworks */,
+				F674F32C18BF8B5800000544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SpeedLetter;
+			productName = SpeedLetter;
+			productReference = F674F32E18BF8B5800000544 /* SpeedLetter.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F674F35418BF8B5800000544 /* SpeedLetterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F674F36918BF8B5800000544 /* Build configuration list for PBXNativeTarget "SpeedLetterTests" */;
+			buildPhases = (
+				F674F35118BF8B5800000544 /* Sources */,
+				F674F35218BF8B5800000544 /* Frameworks */,
+				F674F35318BF8B5800000544 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F674F35B18BF8B5800000544 /* PBXTargetDependency */,
+			);
+			name = SpeedLetterTests;
+			productName = SpeedLetterTests;
+			productReference = F674F35518BF8B5800000544 /* SpeedLetterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F674F32618BF8B5800000544 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SpeedLetter;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "nextdoor studios";
+				TargetAttributes = {
+					F674F35418BF8B5800000544 = {
+						TestTargetID = F674F32D18BF8B5800000544;
+					};
+				};
+			};
+			buildConfigurationList = F674F32918BF8B5800000544 /* Build configuration list for PBXProject "SpeedLetter" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F674F32518BF8B5800000544;
+			productRefGroup = F674F32F18BF8B5800000544 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F674F32D18BF8B5800000544 /* SpeedLetter */,
+				F674F35418BF8B5800000544 /* SpeedLetterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F674F32C18BF8B5800000544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F674F34818BF8B5800000544 /* Main_iPad.storyboard in Resources */,
+				F674F35018BF8B5800000544 /* Images.xcassets in Resources */,
+				F674F34518BF8B5800000544 /* Main_iPhone.storyboard in Resources */,
+				F674F33C18BF8B5800000544 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F674F35318BF8B5800000544 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F674F36118BF8B5800000544 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F674F32A18BF8B5800000544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F674F34E18BF8B5800000544 /* SpeedLetterSecondViewController.m in Sources */,
+				F674F34B18BF8B5800000544 /* SpeedLetterFirstViewController.m in Sources */,
+				F674F34218BF8B5800000544 /* SpeedLetterAppDelegate.m in Sources */,
+				F674F33E18BF8B5800000544 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F674F35118BF8B5800000544 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F674F36318BF8B5800000544 /* SpeedLetterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F674F35B18BF8B5800000544 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F674F32D18BF8B5800000544 /* SpeedLetter */;
+			targetProxy = F674F35A18BF8B5800000544 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F674F33A18BF8B5800000544 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F674F33B18BF8B5800000544 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F674F34318BF8B5800000544 /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F674F34418BF8B5800000544 /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		F674F34618BF8B5800000544 /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F674F34718BF8B5800000544 /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		F674F35F18BF8B5800000544 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F674F36018BF8B5800000544 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F674F36418BF8B5800000544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F674F36518BF8B5800000544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F674F36718BF8B5800000544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpeedLetter/SpeedLetter-Prefix.pch";
+				INFOPLIST_FILE = "SpeedLetter/SpeedLetter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F674F36818BF8B5800000544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpeedLetter/SpeedLetter-Prefix.pch";
+				INFOPLIST_FILE = "SpeedLetter/SpeedLetter-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F674F36A18BF8B5800000544 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpeedLetter.app/SpeedLetter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpeedLetter/SpeedLetter-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SpeedLetterTests/SpeedLetterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F674F36B18BF8B5800000544 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SpeedLetter.app/SpeedLetter";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SpeedLetter/SpeedLetter-Prefix.pch";
+				INFOPLIST_FILE = "SpeedLetterTests/SpeedLetterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F674F32918BF8B5800000544 /* Build configuration list for PBXProject "SpeedLetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F674F36418BF8B5800000544 /* Debug */,
+				F674F36518BF8B5800000544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F674F36618BF8B5800000544 /* Build configuration list for PBXNativeTarget "SpeedLetter" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F674F36718BF8B5800000544 /* Debug */,
+				F674F36818BF8B5800000544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F674F36918BF8B5800000544 /* Build configuration list for PBXNativeTarget "SpeedLetterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F674F36A18BF8B5800000544 /* Debug */,
+				F674F36B18BF8B5800000544 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F674F32618BF8B5800000544 /* Project object */;
+}
