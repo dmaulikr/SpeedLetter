@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F631AA6018BFCC0F00723F54 /* SingleplayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F631AA5F18BFCC0F00723F54 /* SingleplayerViewController.m */; };
 		F674F33218BF8B5800000544 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33118BF8B5800000544 /* Foundation.framework */; };
 		F674F33418BF8B5800000544 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33318BF8B5800000544 /* CoreGraphics.framework */; };
 		F674F33618BF8B5800000544 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33518BF8B5800000544 /* UIKit.framework */; };
@@ -15,14 +16,14 @@
 		F674F34218BF8B5800000544 /* SpeedLetterAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F34118BF8B5800000544 /* SpeedLetterAppDelegate.m */; };
 		F674F34518BF8B5800000544 /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F674F34318BF8B5800000544 /* Main_iPhone.storyboard */; };
 		F674F34818BF8B5800000544 /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F674F34618BF8B5800000544 /* Main_iPad.storyboard */; };
-		F674F34B18BF8B5800000544 /* SpeedLetterFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F34A18BF8B5800000544 /* SpeedLetterFirstViewController.m */; };
-		F674F34E18BF8B5800000544 /* SpeedLetterSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F34D18BF8B5800000544 /* SpeedLetterSecondViewController.m */; };
 		F674F35018BF8B5800000544 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F674F34F18BF8B5800000544 /* Images.xcassets */; };
 		F674F35718BF8B5800000544 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F35618BF8B5800000544 /* XCTest.framework */; };
 		F674F35818BF8B5800000544 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33118BF8B5800000544 /* Foundation.framework */; };
 		F674F35918BF8B5800000544 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33518BF8B5800000544 /* UIKit.framework */; };
 		F674F36118BF8B5800000544 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F674F35F18BF8B5800000544 /* InfoPlist.strings */; };
 		F674F36318BF8B5800000544 /* SpeedLetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F36218BF8B5800000544 /* SpeedLetterTests.m */; };
+		F674F36E18BF8B5800000544 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F36D18BF8B5800000544 /* GameViewController.m */; };
+		F674F37118BF8B5800000544 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F37018BF8B5800000544 /* GameModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F631AA5E18BFCC0F00723F54 /* SingleplayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleplayerViewController.h; sourceTree = "<group>"; };
+		F631AA5F18BFCC0F00723F54 /* SingleplayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleplayerViewController.m; sourceTree = "<group>"; };
 		F674F32E18BF8B5800000544 /* SpeedLetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedLetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F674F33118BF8B5800000544 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F674F33318BF8B5800000544 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,16 +51,16 @@
 		F674F34118BF8B5800000544 /* SpeedLetterAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedLetterAppDelegate.m; sourceTree = "<group>"; };
 		F674F34418BF8B5800000544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
 		F674F34718BF8B5800000544 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
-		F674F34918BF8B5800000544 /* SpeedLetterFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedLetterFirstViewController.h; sourceTree = "<group>"; };
-		F674F34A18BF8B5800000544 /* SpeedLetterFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedLetterFirstViewController.m; sourceTree = "<group>"; };
-		F674F34C18BF8B5800000544 /* SpeedLetterSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SpeedLetterSecondViewController.h; sourceTree = "<group>"; };
-		F674F34D18BF8B5800000544 /* SpeedLetterSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedLetterSecondViewController.m; sourceTree = "<group>"; };
 		F674F34F18BF8B5800000544 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F674F35518BF8B5800000544 /* SpeedLetterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpeedLetterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F674F35618BF8B5800000544 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		F674F35E18BF8B5800000544 /* SpeedLetterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedLetterTests-Info.plist"; sourceTree = "<group>"; };
 		F674F36018BF8B5800000544 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F674F36218BF8B5800000544 /* SpeedLetterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedLetterTests.m; sourceTree = "<group>"; };
+		F674F36C18BF8B5800000544 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
+		F674F36D18BF8B5800000544 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
+		F674F36F18BF8B5800000544 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameModel.h; path = Model/GameModel.h; sourceTree = "<group>"; };
+		F674F37018BF8B5800000544 /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameModel.m; path = Model/GameModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,15 +120,13 @@
 		F674F33718BF8B5800000544 /* SpeedLetter */ = {
 			isa = PBXGroup;
 			children = (
-				F674F34018BF8B5800000544 /* SpeedLetterAppDelegate.h */,
-				F674F34118BF8B5800000544 /* SpeedLetterAppDelegate.m */,
 				F674F34318BF8B5800000544 /* Main_iPhone.storyboard */,
 				F674F34618BF8B5800000544 /* Main_iPad.storyboard */,
-				F674F34918BF8B5800000544 /* SpeedLetterFirstViewController.h */,
-				F674F34A18BF8B5800000544 /* SpeedLetterFirstViewController.m */,
-				F674F34C18BF8B5800000544 /* SpeedLetterSecondViewController.h */,
-				F674F34D18BF8B5800000544 /* SpeedLetterSecondViewController.m */,
-				F674F34F18BF8B5800000544 /* Images.xcassets */,
+				F631AA5E18BFCC0F00723F54 /* SingleplayerViewController.h */,
+				F631AA5F18BFCC0F00723F54 /* SingleplayerViewController.m */,
+				F674F36C18BF8B5800000544 /* GameViewController.h */,
+				F674F36D18BF8B5800000544 /* GameViewController.m */,
+				F674F37218BF8B5800000544 /* Model */,
 				F674F33818BF8B5800000544 /* Supporting Files */,
 			);
 			path = SpeedLetter;
@@ -134,6 +135,9 @@
 		F674F33818BF8B5800000544 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F674F34018BF8B5800000544 /* SpeedLetterAppDelegate.h */,
+				F674F34118BF8B5800000544 /* SpeedLetterAppDelegate.m */,
+				F674F34F18BF8B5800000544 /* Images.xcassets */,
 				F674F33918BF8B5800000544 /* SpeedLetter-Info.plist */,
 				F674F33A18BF8B5800000544 /* InfoPlist.strings */,
 				F674F33D18BF8B5800000544 /* main.m */,
@@ -158,6 +162,15 @@
 				F674F35F18BF8B5800000544 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F674F37218BF8B5800000544 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F674F36F18BF8B5800000544 /* GameModel.h */,
+				F674F37018BF8B5800000544 /* GameModel.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +272,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F674F34E18BF8B5800000544 /* SpeedLetterSecondViewController.m in Sources */,
-				F674F34B18BF8B5800000544 /* SpeedLetterFirstViewController.m in Sources */,
+				F631AA6018BFCC0F00723F54 /* SingleplayerViewController.m in Sources */,
+				F674F36E18BF8B5800000544 /* GameViewController.m in Sources */,
+				F674F37118BF8B5800000544 /* GameModel.m in Sources */,
 				F674F34218BF8B5800000544 /* SpeedLetterAppDelegate.m in Sources */,
 				F674F33E18BF8B5800000544 /* main.m in Sources */,
 			);
@@ -481,6 +495,7 @@
 				F674F36818BF8B5800000544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F674F36918BF8B5800000544 /* Build configuration list for PBXNativeTarget "SpeedLetterTests" */ = {
 			isa = XCConfigurationList;
@@ -489,6 +504,7 @@
 				F674F36B18BF8B5800000544 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

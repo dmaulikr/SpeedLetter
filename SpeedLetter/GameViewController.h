@@ -1,5 +1,5 @@
 //
-//  SpeedLetterFirstViewController.h
+//  GameViewController.h
 //  SpeedLetter
 //
 //  Created by Tobias Wermuth on 27/02/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SpeedLetterFirstViewController : UIViewController
-
+@interface GameViewController : UIViewController
+@property (strong, nonatomic) NSString *gameMode;
 @end

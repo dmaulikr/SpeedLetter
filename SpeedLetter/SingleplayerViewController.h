@@ -1,5 +1,5 @@
 //
-//  SpeedLetterSecondViewController.h
+//  SingleplayerViewController.h
 //  SpeedLetter
 //
 //  Created by Tobias Wermuth on 27/02/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SpeedLetterSecondViewController : UIViewController
+@interface SingleplayerViewController : UIViewController
 
 @end
