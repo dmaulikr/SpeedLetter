@@ -11,22 +11,24 @@
 @implementation MultiplayerGameModel
 - (void)letterPressed:(NSString *)letter byPlayerNumber:(NSUInteger)playerNumber
 {
-    if ([letter isEqualToString:self.currentLetter] && [self getPassedTime] > 0.2) {
-        for (int i = 0; i < self.buttonLetters.count; i++) {
-            [self.buttonLetters setObject:@"" atIndexedSubscript:i];
+    if ([self getPassedTime] > 0.2) {
+        if ([letter isEqualToString:self.currentLetter]) {
+            for (int i = 0; i < self.buttonLetters.count; i++) {
+                [self.buttonLetters setObject:@"" atIndexedSubscript:i];
+            }
+            
+            if (playerNumber == 1)
+                self.pointsPlayer1++;
+            else if (playerNumber == 2)
+                self.pointsPlayer2++;
+            
+            [self popLetter];
+        } else {
+            if (playerNumber == 1)
+                self.pointsPlayer1--;
+            else if (playerNumber == 2)
+                self.pointsPlayer2--;
         }
-        
-        if (playerNumber == 1)
-            self.pointsPlayer1++;
-        else if (playerNumber == 2)
-            self.pointsPlayer2++;
-        
-        [self popLetter];
-    } else {
-        if (playerNumber == 1)
-            self.pointsPlayer1--;
-        else if (playerNumber == 2)
-            self.pointsPlayer2--;
     }
 }
 
