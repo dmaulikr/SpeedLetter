@@ -11,7 +11,7 @@
 @implementation SingleplayerGameModel
 - (double)getPassedTime
 {
-    return [self.timeStamp timeIntervalSinceNow] * -1.0;
+    return [self.timeStamp timeIntervalSinceNow] * -1.0 + self.penalty;
 }
 
 - (void)letterPressed:(NSString *)letter
@@ -22,6 +22,8 @@
         }
         
         [self popLetter];
+    } else {
+        self.penalty += 0.5;
     }
 }
 

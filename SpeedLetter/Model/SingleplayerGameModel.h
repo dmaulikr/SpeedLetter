@@ -14,6 +14,7 @@
 @property (strong, nonatomic) NSString *currentLetter;
 @property (strong, nonatomic) NSMutableArray *buttonLetters;
 @property (strong, nonatomic) NSDate *timeStamp;
+@property (nonatomic) double penalty;
 
 - (void)startGameWithMode:(NSString *)mode;
 - (void)popLetter;

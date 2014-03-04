@@ -129,7 +129,6 @@
 		F674F33718BF8B5800000544 /* SpeedLetter */ = {
 			isa = PBXGroup;
 			children = (
-				F674F34318BF8B5800000544 /* Main_iPhone.storyboard */,
 				F674F34618BF8B5800000544 /* Main_iPad.storyboard */,
 				F631AA5E18BFCC0F00723F54 /* LobbySingleplayerViewController.h */,
 				F631AA5F18BFCC0F00723F54 /* LobbySingleplayerViewController.m */,
@@ -148,6 +147,7 @@
 		F674F33818BF8B5800000544 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F674F34318BF8B5800000544 /* Main_iPhone.storyboard */,
 				F674F34018BF8B5800000544 /* SpeedLetterAppDelegate.h */,
 				F674F34118BF8B5800000544 /* SpeedLetterAppDelegate.m */,
 				F674F34F18BF8B5800000544 /* Images.xcassets */,
@@ -434,7 +434,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpeedLetter/SpeedLetter-Prefix.pch";
 				INFOPLIST_FILE = "SpeedLetter/SpeedLetter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -447,7 +449,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SpeedLetter/SpeedLetter-Prefix.pch";
 				INFOPLIST_FILE = "SpeedLetter/SpeedLetter-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
