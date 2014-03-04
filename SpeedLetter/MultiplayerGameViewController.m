@@ -43,7 +43,7 @@
             if (self.game.pointsPlayer1 > self.game.pointsPlayer2) {
                 self.currentLetterLabel.text = @"WON";
                 self.currentLetterLabelMirrored.text = @"LOST";
-            } else if (self.game.pointsPlayer2 > self.game.pointsPlayer2) {
+            } else if (self.game.pointsPlayer2 > self.game.pointsPlayer1) {
                 self.currentLetterLabel.text = @"LOST";
                 self.currentLetterLabelMirrored.text = @"WON";
             } else {
