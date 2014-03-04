@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F631AA6018BFCC0F00723F54 /* SingleplayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F631AA5F18BFCC0F00723F54 /* SingleplayerViewController.m */; };
+		F631AA6018BFCC0F00723F54 /* LobbySingleplayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F631AA5F18BFCC0F00723F54 /* LobbySingleplayerViewController.m */; };
+		F65D62AF18C29565000846D2 /* LobbyMultiplayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65D62AE18C29565000846D2 /* LobbyMultiplayerViewController.m */; };
+		F65D62B218C29650000846D2 /* MultiplayerGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65D62B118C29650000846D2 /* MultiplayerGameViewController.m */; };
 		F674F33218BF8B5800000544 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33118BF8B5800000544 /* Foundation.framework */; };
 		F674F33418BF8B5800000544 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33318BF8B5800000544 /* CoreGraphics.framework */; };
 		F674F33618BF8B5800000544 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33518BF8B5800000544 /* UIKit.framework */; };
@@ -22,8 +24,9 @@
 		F674F35918BF8B5800000544 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F674F33518BF8B5800000544 /* UIKit.framework */; };
 		F674F36118BF8B5800000544 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F674F35F18BF8B5800000544 /* InfoPlist.strings */; };
 		F674F36318BF8B5800000544 /* SpeedLetterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F36218BF8B5800000544 /* SpeedLetterTests.m */; };
-		F674F36E18BF8B5800000544 /* GameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F36D18BF8B5800000544 /* GameViewController.m */; };
-		F674F37118BF8B5800000544 /* GameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F37018BF8B5800000544 /* GameModel.m */; };
+		F674F36E18BF8B5800000544 /* SingleplayerGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F36D18BF8B5800000544 /* SingleplayerGameViewController.m */; };
+		F674F37118BF8B5800000544 /* SingleplayerGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F674F37018BF8B5800000544 /* SingleplayerGameModel.m */; };
+		F6B6ECB318C62EB9007DB845 /* MultiplayerGameModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F6B6ECB218C62EB9007DB845 /* MultiplayerGameModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F631AA5E18BFCC0F00723F54 /* SingleplayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleplayerViewController.h; sourceTree = "<group>"; };
-		F631AA5F18BFCC0F00723F54 /* SingleplayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleplayerViewController.m; sourceTree = "<group>"; };
+		F631AA5E18BFCC0F00723F54 /* LobbySingleplayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LobbySingleplayerViewController.h; sourceTree = "<group>"; };
+		F631AA5F18BFCC0F00723F54 /* LobbySingleplayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LobbySingleplayerViewController.m; sourceTree = "<group>"; };
+		F65D62AD18C29565000846D2 /* LobbyMultiplayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LobbyMultiplayerViewController.h; sourceTree = "<group>"; };
+		F65D62AE18C29565000846D2 /* LobbyMultiplayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LobbyMultiplayerViewController.m; sourceTree = "<group>"; };
+		F65D62B018C29650000846D2 /* MultiplayerGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiplayerGameViewController.h; sourceTree = "<group>"; };
+		F65D62B118C29650000846D2 /* MultiplayerGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiplayerGameViewController.m; sourceTree = "<group>"; };
 		F674F32E18BF8B5800000544 /* SpeedLetter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpeedLetter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F674F33118BF8B5800000544 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F674F33318BF8B5800000544 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -57,10 +64,12 @@
 		F674F35E18BF8B5800000544 /* SpeedLetterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SpeedLetterTests-Info.plist"; sourceTree = "<group>"; };
 		F674F36018BF8B5800000544 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F674F36218BF8B5800000544 /* SpeedLetterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SpeedLetterTests.m; sourceTree = "<group>"; };
-		F674F36C18BF8B5800000544 /* GameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameViewController.h; sourceTree = "<group>"; };
-		F674F36D18BF8B5800000544 /* GameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameViewController.m; sourceTree = "<group>"; };
-		F674F36F18BF8B5800000544 /* GameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameModel.h; path = Model/GameModel.h; sourceTree = "<group>"; };
-		F674F37018BF8B5800000544 /* GameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = GameModel.m; path = Model/GameModel.m; sourceTree = "<group>"; };
+		F674F36C18BF8B5800000544 /* SingleplayerGameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SingleplayerGameViewController.h; sourceTree = "<group>"; };
+		F674F36D18BF8B5800000544 /* SingleplayerGameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SingleplayerGameViewController.m; sourceTree = "<group>"; };
+		F674F36F18BF8B5800000544 /* SingleplayerGameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SingleplayerGameModel.h; path = Model/SingleplayerGameModel.h; sourceTree = "<group>"; };
+		F674F37018BF8B5800000544 /* SingleplayerGameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SingleplayerGameModel.m; path = Model/SingleplayerGameModel.m; sourceTree = "<group>"; };
+		F6B6ECB118C62EB9007DB845 /* MultiplayerGameModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MultiplayerGameModel.h; path = Model/MultiplayerGameModel.h; sourceTree = "<group>"; };
+		F6B6ECB218C62EB9007DB845 /* MultiplayerGameModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MultiplayerGameModel.m; path = Model/MultiplayerGameModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,10 +131,14 @@
 			children = (
 				F674F34318BF8B5800000544 /* Main_iPhone.storyboard */,
 				F674F34618BF8B5800000544 /* Main_iPad.storyboard */,
-				F631AA5E18BFCC0F00723F54 /* SingleplayerViewController.h */,
-				F631AA5F18BFCC0F00723F54 /* SingleplayerViewController.m */,
-				F674F36C18BF8B5800000544 /* GameViewController.h */,
-				F674F36D18BF8B5800000544 /* GameViewController.m */,
+				F631AA5E18BFCC0F00723F54 /* LobbySingleplayerViewController.h */,
+				F631AA5F18BFCC0F00723F54 /* LobbySingleplayerViewController.m */,
+				F65D62AD18C29565000846D2 /* LobbyMultiplayerViewController.h */,
+				F65D62AE18C29565000846D2 /* LobbyMultiplayerViewController.m */,
+				F674F36C18BF8B5800000544 /* SingleplayerGameViewController.h */,
+				F674F36D18BF8B5800000544 /* SingleplayerGameViewController.m */,
+				F65D62B018C29650000846D2 /* MultiplayerGameViewController.h */,
+				F65D62B118C29650000846D2 /* MultiplayerGameViewController.m */,
 				F674F37218BF8B5800000544 /* Model */,
 				F674F33818BF8B5800000544 /* Supporting Files */,
 			);
@@ -167,8 +180,10 @@
 		F674F37218BF8B5800000544 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F674F36F18BF8B5800000544 /* GameModel.h */,
-				F674F37018BF8B5800000544 /* GameModel.m */,
+				F674F36F18BF8B5800000544 /* SingleplayerGameModel.h */,
+				F674F37018BF8B5800000544 /* SingleplayerGameModel.m */,
+				F6B6ECB118C62EB9007DB845 /* MultiplayerGameModel.h */,
+				F6B6ECB218C62EB9007DB845 /* MultiplayerGameModel.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -272,9 +287,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F631AA6018BFCC0F00723F54 /* SingleplayerViewController.m in Sources */,
-				F674F36E18BF8B5800000544 /* GameViewController.m in Sources */,
-				F674F37118BF8B5800000544 /* GameModel.m in Sources */,
+				F65D62B218C29650000846D2 /* MultiplayerGameViewController.m in Sources */,
+				F631AA6018BFCC0F00723F54 /* LobbySingleplayerViewController.m in Sources */,
+				F674F36E18BF8B5800000544 /* SingleplayerGameViewController.m in Sources */,
+				F674F37118BF8B5800000544 /* SingleplayerGameModel.m in Sources */,
+				F6B6ECB318C62EB9007DB845 /* MultiplayerGameModel.m in Sources */,
+				F65D62AF18C29565000846D2 /* LobbyMultiplayerViewController.m in Sources */,
 				F674F34218BF8B5800000544 /* SpeedLetterAppDelegate.m in Sources */,
 				F674F33E18BF8B5800000544 /* main.m in Sources */,
 			);

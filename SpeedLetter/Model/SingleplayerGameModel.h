@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface GameModel : NSObject
+@interface SingleplayerGameModel : NSObject
 @property (strong, nonatomic) NSArray *alphabet;
 @property (strong, nonatomic) NSMutableArray *currentLetterStorage;
 @property (strong, nonatomic) NSString *currentLetter;
@@ -17,6 +17,6 @@
 
 - (void)startGameWithMode:(NSString *)mode;
 - (void)popLetter;
-- (BOOL)letterPressed:(NSString *)letter;
+- (void)letterPressed:(NSString *)letter;
 - (double)getPassedTime;
 @end

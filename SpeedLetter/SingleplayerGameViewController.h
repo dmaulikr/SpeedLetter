@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface GameViewController : UIViewController
+@interface SingleplayerGameViewController : UIViewController
 @property (strong, nonatomic) NSString *gameMode;
 @end

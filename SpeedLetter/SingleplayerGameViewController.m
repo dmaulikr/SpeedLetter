@@ -6,28 +6,26 @@
 //  Copyright (c) 2014 nextdoor studios. All rights reserved.
 //
 
-#import "GameViewController.h"
-#import "GameModel.h"
+#import "SingleplayerGameViewController.h"
+#import "SingleplayerGameModel.h"
 
-@interface GameViewController ()
+@interface SingleplayerGameViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *currentLetterLabel;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *answerButtons;
 @property (weak, nonatomic) IBOutlet UILabel *gamemodeLabel;
 
-@property (strong, nonatomic) GameModel *game;
+@property (strong, nonatomic) SingleplayerGameModel *game;
 
 @end
 
-@implementation GameViewController
+@implementation SingleplayerGameViewController
 
 
 - (IBAction)letterTry:(UIButton *)sender {
     if (self.game) {
         if (self.game.currentLetterStorage.count > 0) {
-            if ([self.game letterPressed:[sender titleForState:UIControlStateNormal]]) {
-                [self.game popLetter];
-                [self updateUI];
-            }
+            [self.game letterPressed:[sender titleForState:UIControlStateNormal]];
+            [self updateUI];
         } else {
             self.currentLetterLabel.text = [NSString stringWithFormat:@"%.2fs", self.game.getPassedTime];
             
@@ -47,7 +45,7 @@
         [button setTitle:@"" forState:UIControlStateNormal];
     }
     
-    self.game = [[GameModel alloc] init];
+    self.game = [[SingleplayerGameModel alloc] init];
     [self.game startGameWithMode:self.gameMode];
     [self.game popLetter];
     [self updateUI];

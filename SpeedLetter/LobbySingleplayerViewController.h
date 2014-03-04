@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SingleplayerViewController : UIViewController
+@interface LobbySingleplayerViewController : UIViewController
 
 @end

@@ -6,21 +6,21 @@
 //  Copyright (c) 2014 nextdoor studios. All rights reserved.
 //
 
-#import "SingleplayerViewController.h"
-#import "GameViewController.h"
+#import "LobbySingleplayerViewController.h"
+#import "SingleplayerGameViewController.h"
 
-@interface SingleplayerViewController ()
+@interface LobbySingleplayerViewController ()
 
 @end
 
-@implementation SingleplayerViewController
+@implementation LobbySingleplayerViewController
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     if ([segue.identifier isEqualToString:@"Start Simpel Game"]) {
-        [(GameViewController *)segue.destinationViewController setGameMode:@"Simpel"];
+        [(SingleplayerGameViewController *)segue.destinationViewController setGameMode:@"Simpel"];
     } else if ([segue.identifier isEqualToString:@"Start Complex Game"]) {
-        [(GameViewController *)segue.destinationViewController setGameMode:@"Complex"];
+        [(SingleplayerGameViewController *)segue.destinationViewController setGameMode:@"Complex"];
     }
 }
 

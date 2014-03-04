@@ -3,12 +3,12 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "first.png"
+      "filename" : "SingleplayerIcon-1.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "first@2x.png"
+      "filename" : "SingleplayerIcon@2x.png"
     }
   ],
   "info" : {

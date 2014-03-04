@@ -6,24 +6,22 @@
 //  Copyright (c) 2014 nextdoor studios. All rights reserved.
 //
 
-#import "GameModel.h"
+#import "SingleplayerGameModel.h"
 
-@implementation GameModel
+@implementation SingleplayerGameModel
 - (double)getPassedTime
 {
     return [self.timeStamp timeIntervalSinceNow] * -1.0;
 }
 
-- (BOOL)letterPressed:(NSString *)letter
+- (void)letterPressed:(NSString *)letter
 {
     if ([letter isEqualToString:self.currentLetter]) {
         for (int i = 0; i < self.buttonLetters.count; i++) {
             [self.buttonLetters setObject:@"" atIndexedSubscript:i];
         }
         
-        return YES;
-    } else {
-        return NO;
+        [self popLetter];
     }
 }
 

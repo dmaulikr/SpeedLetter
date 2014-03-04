@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Singleplayer View Controller - SpeedLetter-->
+        <!--Lobby Singleplayer View Controller - SpeedLetter-->
         <scene sceneID="W3I-pn-N6e">
             <objects>
-                <viewController title="SpeedLetter" id="CZ4-MO-1fc" customClass="SingleplayerViewController" sceneMemberID="viewController">
+                <viewController title="SpeedLetter" id="CZ4-MO-1fc" customClass="LobbySingleplayerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0dy-1Y-gmV"/>
                         <viewControllerLayoutGuide type="bottom" id="5WX-yx-Sf1"/>
@@ -41,7 +41,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="RRm-8G-3Ha">
-                                <rect key="frame" x="20" y="80" width="280" height="78"/>
+                                <rect key="frame" x="20" y="81" width="280" height="78"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">Start a new 
 singleplayer game</string>
@@ -58,10 +58,10 @@ singleplayer game</string>
             </objects>
             <point key="canvasLocation" x="653" y="-138"/>
         </scene>
-        <!--Game View Controller-->
+        <!--Singleplayer Game View Controller-->
         <scene sceneID="YdT-Fb-phx">
             <objects>
-                <viewController id="GOY-9H-Mde" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController id="GOY-9H-Mde" customClass="SingleplayerGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="6TO-hj-RfH"/>
                         <viewControllerLayoutGuide type="bottom" id="uvB-vb-6iV"/>
@@ -180,25 +180,6 @@ singleplayer game</string>
             </objects>
             <point key="canvasLocation" x="653" y="1188"/>
         </scene>
-        <!--View Controller - Multiplayer-->
-        <scene sceneID="WuR-u4-3Mo">
-            <objects>
-                <viewController title="Multiplayer" id="k0I-Yy-gOS" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="zFC-Y0-gux"/>
-                        <viewControllerLayoutGuide type="bottom" id="TEd-B9-Ssq"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="csq-zG-QQZ">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Multiplayer" id="vBe-FK-RFs"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="V4D-bO-R53" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="653" y="525"/>
-        </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="Vex-rW-GRa">
             <objects>
@@ -212,7 +193,6 @@ singleplayer game</string>
                     </tabBar>
                     <connections>
                         <segue destination="CZ4-MO-1fc" kind="relationship" relationship="viewControllers" id="SUk-Ux-ee1"/>
-                        <segue destination="k0I-Yy-gOS" kind="relationship" relationship="viewControllers" id="23e-Qi-1ls"/>
                         <segue destination="QUy-BD-bpt" kind="relationship" relationship="viewControllers" id="M8t-EP-wfW"/>
                     </connections>
                 </tabBarController>

@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
-        <!--Singleplayer View Controller - SpeedLetter-->
+        <!--Lobby Singleplayer View Controller - SpeedLetter-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController title="SpeedLetter" id="9pv-A4-QxB" customClass="SingleplayerViewController" sceneMemberID="viewController">
+                <viewController title="SpeedLetter" id="9pv-A4-QxB" customClass="LobbySingleplayerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="bZ9-3U-QWk"/>
                         <viewControllerLayoutGuide type="bottom" id="DxR-0r-Rsy"/>
@@ -21,7 +21,7 @@
                                 <items/>
                             </toolbar>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E4g-Hp-Hht">
-                                <rect key="frame" x="20" y="441" width="728" height="59"/>
+                                <rect key="frame" x="20" y="449" width="728" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="39"/>
                                 <state key="normal" title="Simple">
@@ -33,7 +33,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ew0-f3-PrJ">
-                                <rect key="frame" x="20" y="524" width="728" height="59"/>
+                                <rect key="frame" x="20" y="516" width="728" height="59"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="39"/>
                                 <state key="normal" title="Complex">
@@ -45,7 +45,7 @@
                                 </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start a new singleplayer game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rYi-xg-nKL">
-                                <rect key="frame" x="20" y="107" width="728" height="76"/>
+                                <rect key="frame" x="20" y="102" width="728" height="76"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -59,16 +59,16 @@
                             <constraint firstItem="iQr-d4-Ar2" firstAttribute="trailing" secondItem="tsR-hK-woN" secondAttribute="trailing" id="GCv-eZ-Lr1"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Singleplayer" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Singleplayer" image="SingleplayerIcon" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3042" y="-562"/>
         </scene>
-        <!--Game View Controller-->
+        <!--Singleplayer Game View Controller - Singleplayer-->
         <scene sceneID="y2Y-38-K1L">
             <objects>
-                <viewController id="Lhj-Hd-kNg" customClass="GameViewController" sceneMemberID="viewController">
+                <viewController id="Lhj-Hd-kNg" customClass="SingleplayerGameViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="YlM-G9-Ijm"/>
                         <viewControllerLayoutGuide type="bottom" id="Dhz-hZ-ndG"/>
@@ -154,7 +154,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="ph3-tX-53n"/>
+                    <navigationItem key="navigationItem" title="Singleplayer" id="ph3-tX-53n"/>
                     <connections>
                         <outlet property="currentLetterLabel" destination="lGY-CX-G9G" id="Pab-3z-3lc"/>
                         <outlet property="gamemodeLabel" destination="nPx-wp-ZI1" id="vB0-YS-SK4"/>
@@ -168,10 +168,10 @@
             </objects>
             <point key="canvasLocation" x="3985" y="-562"/>
         </scene>
-        <!--Speed Letter Second View Controller - Multiplayer-->
+        <!--Lobby Multiplayer View Controller - Multiplayer-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SpeedLetterSecondViewController" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" customClass="LobbyMultiplayerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="uEr-sV-QSm"/>
                         <viewControllerLayoutGuide type="bottom" id="nNc-SL-6RW"/>
@@ -186,6 +186,37 @@
                                     <navigationItem id="WaP-O7-m87"/>
                                 </items>
                             </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4K2-Ag-iup">
+                                <rect key="frame" x="20" y="449" width="728" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="39"/>
+                                <state key="normal" title="Simple">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X0o-37-PFK" kind="push" identifier="Start Simpel Game" id="4nn-Hj-sNP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6TZ-wO-tOe">
+                                <rect key="frame" x="20" y="516" width="728" height="59"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="39"/>
+                                <state key="normal" title="Complex">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="X0o-37-PFK" kind="push" identifier="Start Complex Game" id="au5-CY-bLU"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Start a new multiplayer game" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sOe-Ua-FHO">
+                                <rect key="frame" x="20" y="102" width="728" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="50"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
@@ -194,7 +225,7 @@
                             <constraint firstItem="ej5-n5-O85" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="top" id="dYc-7R-70W"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Multiplayer" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Multiplayer" image="MultiplayerIcon" id="cPa-gy-q4n"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -213,7 +244,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Highscores" id="95F-Hx-IHY"/>
+                    <tabBarItem key="tabBarItem" title="Highscores" image="HighscoresIcon" id="95F-Hx-IHY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JIe-hy-Pme" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -234,11 +265,13 @@
             </objects>
             <point key="canvasLocation" x="997" y="718"/>
         </scene>
-        <!--Tab Bar Controller-->
+        <!--Tab Bar Controller - SpeedLetter-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <navigationItem key="navigationItem" id="KPM-4K-xPx"/>
+                    <navigationItem key="navigationItem" title="SpeedLetter" id="KPM-4K-xPx">
+                        <barButtonItem key="backBarButtonItem" title="Quit" id="wbi-Vm-fa0"/>
+                    </navigationItem>
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
@@ -255,13 +288,226 @@
             </objects>
             <point key="canvasLocation" x="2023" y="718"/>
         </scene>
+        <!--Multiplayer Game View Controller - Multiplayer-->
+        <scene sceneID="9CH-lu-zDm">
+            <objects>
+                <viewController id="X0o-37-PFK" customClass="MultiplayerGameViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QND-ty-yEh"/>
+                        <viewControllerLayoutGuide type="bottom" id="NZn-o3-5FI"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="5fG-Mh-6eY">
+                        <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JoS-EO-J4g">
+                                <rect key="frame" x="20" y="516" width="728" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="75"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="X0o-37-PFK" eventType="touchUpInside" id="n3w-xn-eqe"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oBf-Jx-sSZ">
+                                <rect key="frame" x="20" y="408" width="728" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="75"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGame:" destination="X0o-37-PFK" eventType="touchUpInside" id="yPN-o6-yfm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LKR-pP-L1r">
+                                <rect key="frame" x="20" y="732" width="360" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letterTry:" destination="X0o-37-PFK" eventType="touchUpInside" id="Rps-nz-3BD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="M94-6m-ZmO">
+                                <rect key="frame" x="388" y="732" width="360" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letterTry:" destination="X0o-37-PFK" eventType="touchUpInside" id="qu5-AD-Pru"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cQB-cn-emB">
+                                <rect key="frame" x="20" y="840" width="360" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letterTry:" destination="X0o-37-PFK" eventType="touchUpInside" id="Nky-Ec-qdM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvP-ax-wgv">
+                                <rect key="frame" x="388" y="840" width="360" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <state key="normal" title="D">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letterTry:" destination="X0o-37-PFK" eventType="touchUpInside" id="jGX-U5-732"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tKf-oT-sBi">
+                                <rect key="frame" x="20" y="84" width="360" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <state key="normal" title="D">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letterTry:" destination="X0o-37-PFK" eventType="touchUpInside" id="d65-mQ-Sl6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l8z-uC-mWy">
+                                <rect key="frame" x="388" y="84" width="360" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <state key="normal" title="C">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letterTry:" destination="X0o-37-PFK" eventType="touchUpInside" id="CSK-Li-re9"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f8h-Fs-4vA">
+                                <rect key="frame" x="20" y="192" width="360" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <state key="normal" title="B">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letterTry:" destination="X0o-37-PFK" eventType="touchUpInside" id="duc-tz-O3g"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IDY-2y-Qwz">
+                                <rect key="frame" x="388" y="192" width="360" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="50"/>
+                                <state key="normal" title="A">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="letterTry:" destination="X0o-37-PFK" eventType="touchUpInside" id="k6z-gl-mWP"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kAO-Ee-LG1">
+                                <rect key="frame" x="20" y="516" width="728" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="75"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nA1-Au-gGS">
+                                <rect key="frame" x="20" y="408" width="728" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="75"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dir-oA-Jzt">
+                                <rect key="frame" x="568" y="624" width="180" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="75"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="All-vx-UMr">
+                                <rect key="frame" x="20" y="300" width="180" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="75"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njg-HE-VuD">
+                                <rect key="frame" x="568" y="309" width="180" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="75"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xfO-Dh-t9L">
+                                <rect key="frame" x="20" y="624" width="180" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-UltraLight" family="Helvetica Neue" pointSize="75"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="____________________________________________________________________________________" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Azz-iJ-EwN">
+                                <rect key="frame" x="20" y="501" width="728" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Multiplayer" id="6dG-g3-b2e"/>
+                    <connections>
+                        <outlet property="currentLetterLabel" destination="kAO-Ee-LG1" id="cX3-nw-6kk"/>
+                        <outlet property="currentLetterLabelMirrored" destination="nA1-Au-gGS" id="xLr-DB-MBE"/>
+                        <outlet property="startButton" destination="JoS-EO-J4g" id="q9s-fs-qZq"/>
+                        <outlet property="startButtonMirrored" destination="oBf-Jx-sSZ" id="gdB-hv-KUQ"/>
+                        <outlet property="statsPlayer1Label" destination="Dir-oA-Jzt" id="czf-Di-SAM"/>
+                        <outlet property="statsPlayer1LabelMirrored" destination="xfO-Dh-t9L" id="L1q-pD-Gho"/>
+                        <outlet property="statsPlayer2Label" destination="njg-HE-VuD" id="220-Ht-k0Q"/>
+                        <outlet property="statsPlayer2LabelMirrored" destination="All-vx-UMr" id="WVa-5S-ZsR"/>
+                        <outletCollection property="answerPlayer1Buttons" destination="LKR-pP-L1r" id="7JJ-w6-udc"/>
+                        <outletCollection property="answerPlayer1Buttons" destination="M94-6m-ZmO" id="EVc-20-nMI"/>
+                        <outletCollection property="answerPlayer1Buttons" destination="FvP-ax-wgv" id="MRm-Cr-mD8"/>
+                        <outletCollection property="answerPlayer1Buttons" destination="cQB-cn-emB" id="N2S-rA-Phz"/>
+                        <outletCollection property="answerPlayer2Buttons" destination="IDY-2y-Qwz" id="FlQ-SR-fyt"/>
+                        <outletCollection property="answerPlayer2Buttons" destination="f8h-Fs-4vA" id="caP-N7-wX9"/>
+                        <outletCollection property="answerPlayer2Buttons" destination="l8z-uC-mWy" id="HeR-CI-gza"/>
+                        <outletCollection property="answerPlayer2Buttons" destination="tKf-oT-sBi" id="AG3-Cd-9p0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6ig-Sa-JSR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3985" y="718"/>
+        </scene>
     </scenes>
+    <resources>
+        <image name="HighscoresIcon" width="30" height="30"/>
+        <image name="MultiplayerIcon" width="30" height="30"/>
+        <image name="SingleplayerIcon" width="30" height="30"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackOpaque"/>
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
     <inferredMetricsTieBreakers>
-        <segue reference="oJw-pa-ryK"/>
+        <segue reference="xzh-MR-O9h"/>
+        <segue reference="au5-CY-bLU"/>
     </inferredMetricsTieBreakers>
 </document>
